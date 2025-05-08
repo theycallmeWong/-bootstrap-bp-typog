@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockquotes Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: #393e41;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        .main-container {
+            max-width: 2535px;
+            margin: 5;
+            padding: 2px 0 0 0;
+        }
+        .block-title {
+            font-size: 4rem;
+            font-weight: 400;
+            margin-bottom: 0.2em;
+            margin-top: 0.5em;
+            text-align: center;
+        }
+        .block-desc {
+            font-size: 1.1rem;
+            font-weight: 400;
+            margin-bottom: 1.5em;
+            text-align: center;
+        }
+        .blockquote {
+            font-size: 1.1rem;
+            border-left: none;
+            margin-bottom: 0.5em;
+            color: #fff;
+        }
+        .blockquote-footer {
+            color: #b0b0b0;
+            font-size: 0.95em;
+        }
+        .btn-row {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            gap: 12px;
+        }
+        .btn-custom {
+            background: #22b455;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 24px;
+            font-size: 1.1rem;
+            margin: 0 10px;
+            transition: background 0.2s;
+        }
+        .btn-custom.btn-info {
+            background: #19b5fe;
+        }
+        .btn-custom:hover {
+            background: #ffe156;
+            color: #222;
+        }
+        @media (max-width: 900px) {
+            .block-title { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container text-center">
+        <div class="block-title">Blockquotes</div>
+        <div class="block-desc">A well-known quote, contained in a blockquote element.</div>
+        <div class="block-title">Naming a Quote</div>
+        <div class="block-desc">A well-known quote, contained in a blockquote element.</div>
+        <div class="row row-blockquote">
+            <div class="col-md-6 text-start">
+                <blockquote class="blockquote">
+                    <span style="font-weight:500;">A well-known quote, contained in a blockquote element.</span>
+                    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                </blockquote>
+            </div>
+            <div class="col-md-6 text-end">
+                <blockquote class="blockquote">
+                    <span style="font-weight:500;">A well-known quote, contained in a blockquote element.</span>
+                    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                </blockquote>
+            </div>
+        </div>
+        <div class="btn-row">
+            <a href="HOMEPAGE_BOOSTRAP.html" class="btn btn-custom">BACK TO HOME</a>
+            <a href="task1.html" class="btn btn-custom btn-info">BACK TO TASK 1</a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
