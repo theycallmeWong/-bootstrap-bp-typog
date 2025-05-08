@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK 3 - Customized Headings & Inline Elements</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: #393e41;
+            color: #fff;
+            min-height: 100vh;
+        }
+        .main-container {
+            text-size-adjust: 4;
+            max-width: 2535px;
+            margin: 5;
+            padding: 2px 0 0 0;
+        }
+        .display-heading {
+            font-weight: 700;
+            margin-bottom: 0.2em;
+        }
+        .display-secondary {
+            font-size: 1.1rem;
+            font-weight: 400;
+            margin-left: 10px;
+            opacity: 0.8;
+        }
+        .display-secondary-success { color: #22b455; }
+        .display-secondary-warning { color: #ffe156; }
+        .display-secondary-info { color: #19b5fe; }
+        .display-secondary-faded { color: #b0b0b0; }
+        .lead {
+            color: #fefefe;
+            font-size: 1.1rem;
+            margin-top: 2.5em;
+            text-align: center;
+        }
+        .inline-title {
+            font-size: 5rem;
+            font-weight: 400;
+            margin-top: 0.3;
+            margin-bottom: 0.5em;
+        }
+        .btn-custom {
+            background: #22b455;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 24px;
+            font-size: 1.1rem;
+            margin: 0 10px;
+            transition: background 0.2s;
+        }
+        .btn-custom.btn-info {
+            background: #19b5fe;
+        }
+        .btn-custom:hover {
+            background: #ffe156;
+            color: #222;
+        }
+        .btn-row {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            gap: 12px;
+        }
+        .inline-mark { background: #ffe156; color: #222; padding: 0 4px; border-radius: 2px; }
+        @media (max-width: 900px) {
+            .inline-title { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="display-heading display-6">Fancy display heading <span class="display-secondary display-secondary-faded">With faded secondary text</span></div>
+        <div class="display-heading display-6">Fancy display heading <span class="display-secondary display-secondary-success">With text success</span></div>
+        <div class="display-heading display-6">Fancy display heading <span class="display-secondary display-secondary-warning">With text warning</span></div>
+        <div class="display-heading display-6">Fancy display heading <span class="display-secondary display-secondary-info">With text information</span></div>
+
+        <div class="display-1">Display 1</div>
+        <div class="display-2">Display 2</div>
+        <div class="display-3">Display 3</div>
+        <div class="display-4">Display 4</div>
+        <div class="display-5">Display 5</div>
+        <div class="display-6">Display 6</div>
+
+        <p class="lead">This is a lead paragraph. It stands out from regular paragraphs.</p>
+        
+        <div class="row">
+            <div class="col-md-8">
+                <div class="inline-title">Inline Text Elements</div>
+    
+        <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+        <p><del>This line of text is meant to be treated as deleted text.</del></p>
+        <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+        <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+        <p><u>This line of text will render as underlined.</u></p>
+        <p><small>This line of text is meant to be treated as fine print.</small></p>
+        <p><strong>This line rendered as bold text.</strong></p>
+        <p><em>This line rendered as italicized text.</em></p>
+
+        <hr>
+
+        
+
+        
+        <div class="btn-row">
+            <a href="HOMEPAGE_BOOSTRAP.html" class="btn btn-custom">Back to Homepage</a>
+            <a href="task4.html" class="btn btn-custom btn-warning" style="background:#ffe156;color:#222;">Proceed to Task 4</a>
+        </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
